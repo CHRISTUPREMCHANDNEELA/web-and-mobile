@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+.search-bar {
+  margin-bottom: 15px;
+}
+
+.equipment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.equipment-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(50% - 10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.equipment-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.equipment-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.equipment-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.view-details-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .equipment-card {
+    width: 100%;
+  }
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.success-message.show {
+  opacity: 1;
+}
+
+.item-details img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.features {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.reservation-form input,
+.reservation-form button {
+  width: 100%;
+  margin-top: 10px;
+}

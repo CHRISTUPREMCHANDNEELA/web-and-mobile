@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Item Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div data-role="navbar" class="nav-bar" data-grid="b">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about" data-transition="slide">About</a></li>
+      <li><a href="#contact" data-transition="slide">Contact</a></li>
+    </ul>
+  </div>
+
+  <h1 id="item-title">Loading...</h1>
+  <div class="item-details" id="item-container"></div>
+
+  <h2>Reserve This Item</h2>
+  <form id="reservation-form" class="reservation-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="text" id="item" readonly>
+    <input type="date" id="date" required>
+    <button type="submit">Reserve</button>
+  </form>
+
+  <div id="confirmation" class="success-message"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/item.js"></script>
+
+</body>
+</html>
